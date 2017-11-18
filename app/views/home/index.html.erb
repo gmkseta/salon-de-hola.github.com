@@ -12,6 +12,7 @@
           font-weight: normal; /* normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900 */
           font-style: normal; /* normal, italic, oblique */;
     }
+    td{font-size:3em;
 </style>
 
 
@@ -26,6 +27,7 @@
                     <br>
                 </div>
             </div>
+            <br>
             
             
             <div class="row">
@@ -48,4 +50,31 @@
             
         </form>
     
+        <center style="color:white; font-size:2rem">
+            <% @winners.each do |w|%>
+                <%=w.id%>등 : <%=w.host%> ♥ <%=w.guest%>
+                <br>
+            <%end%>
+        </center>
+            
+    <!--<div class="row">-->
+    <!--    <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4" style="color:white">-->
+    <!--        <table>-->
+    <!--          <tbody>-->
+    <!--            <1% @names.each do |name| %>-->
+    <!--              <tr>-->
+    <!--                <div class="row">-->
+    <!--                    <div class="col-md-6 col-sm-6">-->
+    <!--                        <td><1%= name.host %></td>-->
+    <!--                    </div>-->
+    <!--                    <div class="col-md-6 col-sm-6">-->
+    <!--                        <td><1%= name.guest %></td>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--              </tr>-->
+    <!--            <1% end %>-->
+    <!--          </tbody>-->
+    <!--        </table>-->
+    <!--    </div>-->
+    <!--</div>-->
 </div>

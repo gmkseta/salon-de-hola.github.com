@@ -11,9 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171117052148) do
+ActiveRecord::Schema.define(version: 20171117081707) do
 
   create_table "names", force: :cascade do |t|
+    t.string   "host"
+    t.string   "guest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "winners", force: :cascade do |t|
     t.string   "host"
     t.string   "guest"
     t.datetime "created_at", null: false
